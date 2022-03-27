@@ -13,8 +13,7 @@ def pdf_extractor():
     file = 'static/uploads/Current.pdf'
 
     df1 = pd.DataFrame(
-        columns=['Doc Type', 'Document.No', 'Posting Date', 'Bill.No', 'Bill.Date', 'Gross', 'Net.Amt Deductions',
-                 'TDS'])
+        columns=['Doc Type','Document.No','Bill No.','Gross','Net.Amt Deductions','Posting Date','Bill.Date','TDS'])
     k = 0
     with open(file, 'rb') as f:
         content = io.BytesIO(f.read())
